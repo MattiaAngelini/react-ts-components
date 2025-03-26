@@ -1,25 +1,24 @@
-import Card from 'react-bootstrap/Card';
 import { cardInterface } from '../interfaces/cardInterface.ts';
-import './cardBs.scss'
+import '../styles/card.scss'
 
-function CardBs(props: cardInterface) {
+function Card(props: cardInterface) {
   return (
     <div className='card' 
       style={{backgroundColor: props.bgColor,
               color: props.color
       }}>
-      <Card.Img variant="top" src={props.image} />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
+      <img src={props.image} />
+      <div>
+        <h4>{props.title}</h4>
+        <p>
           {props.description}
-        </Card.Text>
+        </p>
         <a href={props.link}>{props.linkTitle}</a>
       {/* creare componente pers. bottono e importarlo qui
        <button className='btn' onClick={props.onclick}>{props.btn}</button> */}
-      </Card.Body>
+      </div>
     </div>
   );
 }
 
-export default CardBs;
+export default Card;
