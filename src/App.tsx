@@ -1,19 +1,32 @@
 import { useState } from 'react'
 import './App.css'
-import Card from './utilities/cardbs.tsx'
+import Card from './utilities/card.tsx'
 
 function App() {
   const [count, setCount] = useState(0)
-
   function test(){
-    setCount(count+1)
+    window.location= 'https://github.com/MattiaAngelini/react-ts-components';
   }
+
   return (
     <>
-    <h1 className='text-center'>    </h1>
-      Test components:
-      <Card color='white' bgColor='black' image='../public/IMG_20240620_180637.jpg' onclick={test}  btn='Aumenta counter' title='Card' description='la mia prima card' link='https://github.com/' linkTitle='vai al link'></Card>
-      <div>{count}</div>
+    <h1 className='text-center'>     Test components:  </h1>
+    <Card 
+        title='Il Titolo'
+        description='la mia prima card' 
+        color='white' 
+        bgColor='black' 
+        image='../public/IMG_20240620_180637.jpg'
+        button={{
+          title: 'vai',
+          bgColor: 'red',
+          color: 'yellow',
+          onClick: test,
+          width: '100px',
+          padding: '10px',
+          className: 'btn'
+        }}
+      />
     </>
   )
 }

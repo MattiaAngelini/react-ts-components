@@ -1,11 +1,10 @@
-export interface cardInterface {
+import { BtnInterface } from './btnInterface';
+
+export interface CardInterface {
     title: string;
     description: string;
     image?: string;
-    linkTitle?: string
-    link?: string;
-    btn?:string;
-    onclick?(): void
     bgColor?: string;
     color?: string;
-  }
+    button?: BtnInterface; // Ora il bottone è un oggetto separato
+}
