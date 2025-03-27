@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './utilities/card.tsx'
+import Hero from './sections/hero.tsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,23 @@ function App() {
   return (
     <>
     <h1 className='text-center'>     Test components:  </h1>
+    <Hero 
+      textColor='white'
+      mediaUrl='../public/heroVIdeo.mp4'  
+      video={true}
+      title='Titolo hero'
+      description='Benvenuti sul mio profilo'
+      button={{
+        title: 'vai',
+        bgColor: 'red',
+        color: 'yellow',
+        onClick: test,
+        width: '100px',
+        padding: '10px',
+        className: 'btn'
+      }}
+      >
+      </Hero>
     <Card 
         title='Il Titolo'
         description='la mia prima card' 
