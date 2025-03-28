@@ -1,0 +1,46 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+    img{//dimensioni logo
+        height: 50px;
+        width: 50px;
+    }
+    i{
+        cursor: pointer;
+    }
+
+    .hamburger-menu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: blue;
+        z-index: 200;
+        line-height: 40px;
+        animation-duration: 0.3s;
+        animation-name: slide-in;
+
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+  }
+  
