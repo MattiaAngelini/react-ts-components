@@ -49,7 +49,8 @@ const slides = [
     "Security First",
     "Enterprise-grade protection for your data",
     "./../public/voidon_front.jpg.webp"
-  )
+  ),
+  
 ];
 
   // function test(){

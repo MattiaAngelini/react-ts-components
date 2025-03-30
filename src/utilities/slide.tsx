@@ -5,8 +5,10 @@ function Slide(props: SlideModel) {
   return (
     <div className='slide'>
         <img src={props.imageUrl} alt="" />
-        <div>{props.title}</div>
-        <p>{props.description}</p>
+        <div className='description'>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
+        </div>
     </div>
   );
 }

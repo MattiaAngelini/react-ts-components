@@ -1,7 +1,7 @@
 export class SlideModel {
-    id: number;
-    title: string;
-    description: string;
+    id?: number;
+    title?: string;
+    description?: string;
     imageUrl: string;
   
     constructor(id: number,title: string, description: string, imageUrl: string) {
