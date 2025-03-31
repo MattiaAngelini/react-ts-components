@@ -21,15 +21,15 @@ function Carousel(props: CarouselInterface) {
 
   return (
     <div className='carousel'>
-      <div className='main-pic d-flex justify-content-center'>
+      <div className='main-pic d-flex justify-content-center align-items-center gap-4'>
         {/* Slide Principale */}
-        <span onClick={prevImage}>sx</span>
+        <i onClick={prevImage} className="fa-solid fa-arrow-left"></i>
             <Slide
                 imageUrl={props.slideArray[counterImg].imageUrl}
                 title={props.slideArray[counterImg].title}
                 description={props.slideArray[counterImg].description}>
              </Slide>
-        <span onClick={nextImage}>dx</span>
+        <i onClick={nextImage} className="fa-solid fa-arrow-right"></i>
       </div>
       
       {/* Carosello */}

@@ -19,12 +19,11 @@ function App() {
 
  // Slides per testare carosello
 const slides = [
-
   new SlideModel(
     1,
     "Team Collaboration",
     "Work together seamlessly from anywhere in the world",
-    "../public/glaciora_back.jpg.webp"
+    "../public/glaciora_back.jpg.webp",
   ),
   new SlideModel(
     2,
@@ -52,6 +51,7 @@ const slides = [
   ),
   
 ];
+slides.forEach((slide)=> slide.getShortDescription() )
 
   // function test(){
   //   window.location= 'https://github.com/MattiaAngelini/react-ts-components';
