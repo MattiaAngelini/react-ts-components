@@ -1,4 +1,5 @@
+import { SlideModel } from '../models/slideModel';
+
 export interface CarouselInterface {
-    slideArray:[] ;
-    //array di models
-  }
+    slideArray: SlideModel[]; 
+}

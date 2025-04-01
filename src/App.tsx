@@ -24,34 +24,39 @@ const slides = [
     "Team Collaboration",
     "Work together seamlessly from anywhere in the world",
     "../public/glaciora_back.jpg.webp",
+    false
   ),
   new SlideModel(
     2,
     "Security First",
     "Enterprise-grade protection for your data",
-    "./../public/voidon_front.jpg.webp"
+    "./../public/voidon_front.jpg.webp",
+    false
   ),
   new SlideModel(
     3,
     "Digital Innovation",
     "Transform your business with cutting-edge technology",
-    "./../public/flareon_front.jpg.webp"
+    "./../public/flareon_front.jpg.webp",
+    false
   ),
   new SlideModel(
     4,
     "Team Collaboration",
     "Work together seamlessly from anywhere in the world",
-    "../public/glaciora_back.jpg.webp"
+    "../public/glaciora_back.jpg.webp",
+    false
   ),
   new SlideModel(
     5,
     "Security First",
     "Enterprise-grade protection for your data",
-    "./../public/voidon_front.jpg.webp"
+    "./../public/voidon_front.jpg.webp",
+    false
   ),
   
 ];
-slides.forEach((slide)=> slide.getShortDescription() )
+
 
   // function test(){
   //   window.location= 'https://github.com/MattiaAngelini/react-ts-components';
@@ -67,7 +72,7 @@ slides.forEach((slide)=> slide.getShortDescription() )
     
     <h1 className='text-center'>     Test components:  </h1>
  
-    <Carousel urlMainImage={slides[0].imageUrl} slideArray={slides}></Carousel>
+    <Carousel slideArray={slides}></Carousel>
 
     {/* <Hero 
       textColor='white'
