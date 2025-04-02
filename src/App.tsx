@@ -58,9 +58,9 @@ const slides = [
 ];
 
 
-  // function test(){
-  //   window.location= 'https://github.com/MattiaAngelini/react-ts-components';
-  // }
+  function test(){
+    window.location= 'https://github.com/MattiaAngelini/react-ts-components';
+  }
 
   return (
     <>
@@ -74,7 +74,7 @@ const slides = [
  
     <Carousel slideArray={slides}></Carousel>
 
-    {/* <Hero 
+      <Hero 
       textColor='white'
       mediaUrl='../public/heroVIdeo.mp4'  
       video={true}
@@ -106,7 +106,7 @@ const slides = [
           padding: '10px',
           className: 'btn'
         }}
-      /> */}
+      /> 
     </>
   )
 }
